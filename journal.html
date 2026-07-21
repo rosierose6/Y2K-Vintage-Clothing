@@ -61,6 +61,13 @@
   }
   .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(138,106,146,.35); }
 
+  /* Mobile nav: stack the wordmark and links so they aren't crowded */
+  @media (max-width: 640px) {
+    nav { flex-direction: column; gap: 14px; padding: 16px 5vw; }
+    nav .wordmark { font-size: 22px; }
+    nav .links { gap: 20px; flex-wrap: wrap; justify-content: center; }
+  }
+
   header.hero { padding: 11vh 5vw 6vh; text-align: center; }
   .hero .eyebrow {
     font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase;

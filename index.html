@@ -110,6 +110,13 @@
   }
   .btn.ghost:hover { background: rgba(213,196,236,.25); }
 
+  /* Mobile nav: stack the wordmark and links so they aren't crowded */
+  @media (max-width: 640px) {
+    nav { flex-direction: column; gap: 14px; padding: 16px 5vw; }
+    nav .wordmark { font-size: 22px; }
+    nav .links { gap: 20px; flex-wrap: wrap; justify-content: center; }
+  }
+
   /* ---------- Hero ---------- */
   header.hero {
     padding: 12vh 5vw 11vh;
