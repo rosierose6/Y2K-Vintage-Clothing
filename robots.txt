@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.fairytqles-clothing.com/sitemap.xml
+Sitemap: https://www.y2kvintageclothing.com/sitemap.xml
