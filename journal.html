@@ -1,172 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>the journal — Y2K styling & vintage tips | Y2K Vintage Clothing</title>
-<meta name="description" content="Styling ideas, thrifting notes, and Y2K outfit inspiration from Y2K Vintage Clothing — a curated vintage & fairycore shop. Read the journal.">
+<title>the journal — Y2K styling &amp; vintage tips | Y2K Vintage Clothing</title>
+<meta name="description" content="Styling ideas, thrifting notes, and Y2K outfit inspiration from Y2K Vintage Clothing — a curated vintage &amp; fairycore shop. Read the journal.">
 <link rel="canonical" href="https://www.y2kvintageclothing.com/journal.html">
-
 <meta property="og:type" content="website">
-<meta property="og:title" content="the journal — Y2K styling & vintage tips | Y2K Vintage Clothing">
-<meta property="og:description" content="Styling ideas and Y2K outfit inspiration from Y2K Vintage Clothing, a curated vintage & fairycore shop.">
+<meta property="og:site_name" content="Y2K Vintage Clothing">
+<meta property="og:title" content="the journal — Y2K styling &amp; vintage tips | Y2K Vintage Clothing">
+<meta property="og:description" content="Styling ideas and Y2K outfit inspiration from Y2K Vintage Clothing, a curated vintage &amp; fairycore shop.">
 <meta property="og:url" content="https://www.y2kvintageclothing.com/journal.html">
 <meta property="og:image" content="https://www.y2kvintageclothing.com/preview.jpg">
-<meta property="og:site_name" content="Y2K Vintage Clothing">
-
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="the journal — Y2K styling &amp; vintage tips | Y2K Vintage Clothing">
+<meta name="twitter:description" content="Styling ideas and Y2K outfit inspiration from Y2K Vintage Clothing, a curated vintage &amp; fairycore shop.">
+<meta name="twitter:image" content="https://www.y2kvintageclothing.com/preview.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #fdf4f7; --ink: #5a4a5e; --deep: #8a6a92; --rose: #e9b7cd;
-    --lilac: #d5c4ec; --sage: #cfe0cd; --sky: #cfe3ee; --white: #fffdfb;
+  :root{
+    --plum:#4a3f56;
+    --plum-soft:#5a4f66;
+    --lilac:#9887b0;
+    --muted:#6d6577;
+    --eyebrow:#a99bbb;
+    --serif:'EB Garamond', Georgia, serif;
+    --sans:'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --pill:linear-gradient(135deg,#eabdd2 0%,#c5b4dd 100%);
   }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    background: var(--bg);
-    background-image:
-      radial-gradient(ellipse at 10% 15%, rgba(213,196,236,.35) 0 30%, transparent 60%),
-      radial-gradient(ellipse at 90% 25%, rgba(207,227,238,.4) 0 25%, transparent 55%),
-      radial-gradient(ellipse at 70% 90%, rgba(233,183,205,.3) 0 25%, transparent 55%);
-    background-attachment: fixed;
-    color: var(--ink);
-    font-family: 'Quicksand', system-ui, sans-serif;
-    font-size: 15.5px; line-height: 1.65; -webkit-font-smoothing: antialiased;
-  }
-  a { color: inherit; }
-  nav {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 22px 5vw; position: sticky; top: 0;
-    background: rgba(253,244,247,.9); backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(138,106,146,.2); z-index: 10;
-  }
-  nav .wordmark {
-    font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic;
-    font-size: 24px; font-weight: 500; text-decoration: none; color: var(--deep); white-space: nowrap;
-  }
-  nav .links { display: flex; gap: 24px; align-items: center; }
-  nav .links a.plain {
-    text-decoration: none; font-weight: 600; font-size: 13px;
-    letter-spacing: 0.06em; color: var(--deep); transition: color .2s;
-  }
-  nav .links a.plain:hover { color: var(--ink); }
-  .btn {
-    text-decoration: none; font-weight: 600; font-size: 13px; letter-spacing: 0.05em;
-    background: linear-gradient(135deg, var(--rose), var(--lilac)); color: #4d3a52;
-    border-radius: 999px; padding: 12px 26px; display: inline-block;
-    box-shadow: 0 4px 14px rgba(138,106,146,.25); transition: transform .2s, box-shadow .2s;
-  }
-  .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(138,106,146,.35); }
-
-  /* Mobile nav: stack the wordmark and links so they aren't crowded */
-  @media (max-width: 640px) {
-    nav { flex-direction: column; gap: 14px; padding: 16px 5vw; }
-    nav .wordmark { font-size: 22px; }
-    nav .links { gap: 20px; flex-wrap: wrap; justify-content: center; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    color:var(--muted);
+    background:
+      radial-gradient(ellipse 80% 55% at 12% 0%, #e7e1f0 0%, rgba(231,225,240,0) 62%),
+      radial-gradient(ellipse 65% 50% at 100% 28%, #e5ebef 0%, rgba(229,235,239,0) 62%),
+      radial-gradient(ellipse 85% 65% at 0% 92%, #fcedef 0%, rgba(252,237,239,0) 62%),
+      linear-gradient(165deg,#f3eff6 0%,#faf2f4 100%);
+    background-attachment:fixed;
+    -webkit-font-smoothing:antialiased;
   }
 
-  header.hero { padding: 11vh 5vw 6vh; text-align: center; }
-  .hero .eyebrow {
-    font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase;
-    font-weight: 600; color: var(--deep); margin-bottom: 22px;
+  /* nav */
+  nav{
+    position:sticky;top:0;z-index:20;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1.4rem 3.5rem;
+    background:rgba(252,248,249,.93);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(154,136,176,.10);
   }
-  .hero h1 {
-    font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400;
-    font-size: clamp(40px, 7vw, 78px); line-height: 1.05; color: #503f56;
+  .logo{
+    font-family:var(--serif);font-style:italic;font-size:1.45rem;
+    color:var(--plum-soft);text-decoration:none;letter-spacing:.01em;
   }
-  .hero h1 em {
-    font-style: italic;
-    background: linear-gradient(120deg, #c085a8, #9a7ec2);
-    -webkit-background-clip: text; background-clip: text; color: transparent;
+  .nav-links{display:flex;align-items:center;gap:2.2rem}
+  .nav-links a{
+    font-size:.95rem;color:#7a7086;text-decoration:none;letter-spacing:.03em;
+    transition:color .2s ease;
   }
-  .hero p.sub { margin: 26px auto 0; max-width: 48ch; font-size: 16px; font-weight: 500; }
+  .nav-links a:hover{color:var(--plum)}
+  .pill{
+    display:inline-block;background:var(--pill);color:var(--plum);
+    padding:.8rem 1.75rem;border-radius:999px;text-decoration:none;
+    font-weight:600;font-size:.95rem;letter-spacing:.01em;
+    box-shadow:0 4px 16px rgba(180,150,190,.28);
+    transition:transform .2s ease,box-shadow .2s ease;
+  }
+  .pill:hover{transform:translateY(-2px);box-shadow:0 7px 22px rgba(180,150,190,.36)}
 
-  .posts {
-    display: grid; grid-template-columns: repeat(2, 1fr);
-    gap: 30px; padding: 4vh 6vw 12vh; max-width: 1100px; margin: 0 auto;
+  /* header */
+  header{text-align:center;padding:5.5rem 1.5rem 0;max-width:760px;margin:0 auto}
+  .eyebrow{
+    font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;
+    color:var(--eyebrow);margin-bottom:1.4rem;
   }
-  @media (max-width: 760px) { .posts { grid-template-columns: 1fr; } }
-  .post-card {
-    text-decoration: none; display: block; background: var(--white);
-    border-radius: 26px; overflow: hidden; padding: 34px 30px;
-    box-shadow: 0 6px 22px rgba(138,106,146,.16);
-    transition: transform .25s, box-shadow .25s; border: 1px solid rgba(213,196,236,.4);
+  header h1{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(2.5rem,6vw,4.15rem);line-height:1.1;
+    color:var(--plum);letter-spacing:-.01em;
   }
-  .post-card:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(138,106,146,.28); }
-  .post-card .kicker {
-    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
-    font-weight: 600; color: var(--deep); margin-bottom: 14px;
-  }
-  .post-card h2 {
-    font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500;
-    font-size: 27px; line-height: 1.2; color: #503f56; margin-bottom: 12px;
-  }
-  .post-card p { font-size: 14.5px; font-weight: 500; color: #7c6a82; }
-  .post-card .read {
-    display: inline-block; margin-top: 16px; font-size: 11px; font-weight: 600;
-    letter-spacing: 0.12em; text-transform: uppercase; color: var(--deep);
-    border-bottom: 1.5px solid var(--rose); padding-bottom: 2px;
+  header h1 em{font-style:italic;color:var(--lilac)}
+  header p{
+    font-size:1.0625rem;line-height:1.8;margin:1.9rem auto 0;max-width:470px;
   }
 
-  footer {
-    padding: 10vh 5vw 7vh; text-align: center;
-    background: linear-gradient(180deg, transparent, rgba(213,196,236,.35));
+  /* cards */
+  .posts{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(288px,1fr));
+    gap:2.1rem;
+    max-width:1180px;
+    margin:4.5rem auto 0;
+    padding:0 3.5rem;
   }
-  footer h5 {
-    font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400;
-    font-size: clamp(28px, 4vw, 44px); line-height: 1.1; color: #503f56;
+  .card{
+    display:flex;flex-direction:column;
+    background:#fdfbfa;border-radius:20px;
+    padding:2.4rem 2.2rem 2.2rem;
+    text-decoration:none;
+    box-shadow:0 10px 34px rgba(122,100,142,.09);
+    transition:transform .25s ease,box-shadow .25s ease;
   }
-  footer h5 em { font-style: italic; color: var(--deep); }
-  footer .cta { margin-top: 30px; }
-  footer .fine {
-    margin-top: 60px; display: flex; justify-content: space-between;
-    font-size: 13px; font-weight: 500; color: var(--deep); max-width: 1000px; margin-left:auto; margin-right:auto;
+  .card:hover{transform:translateY(-4px);box-shadow:0 16px 42px rgba(122,100,142,.14)}
+  .card .eyebrow{margin-bottom:1rem}
+  .card h2{
+    font-family:var(--serif);font-weight:400;font-size:1.62rem;
+    line-height:1.28;color:var(--plum);margin-bottom:1.1rem;
   }
-  footer .fine a { text-decoration: none; border-bottom: 1px solid var(--rose); }
-  @media (max-width: 600px) { footer .fine { flex-direction: column; gap: 8px; } }
+  .card p{font-size:.98rem;line-height:1.75;margin-bottom:1.8rem}
+  .read{
+    margin-top:auto;align-self:flex-start;
+    font-size:.75rem;text-transform:uppercase;letter-spacing:.14em;
+    color:var(--lilac);
+    border-bottom:1px solid rgba(226,180,205,.75);padding-bottom:4px;
+  }
+
+  /* footer */
+  footer{margin-top:6rem;padding:4.5rem 3.5rem 2.5rem;text-align:center}
+  footer h2{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(2rem,4.4vw,2.65rem);color:var(--plum);margin:0 0 2rem;
+  }
+  footer h2 em{font-style:italic;color:var(--lilac)}
+  .footer-bottom{
+    display:flex;justify-content:space-between;align-items:center;
+    max-width:1180px;margin:5rem auto 0;
+    font-size:.85rem;color:var(--eyebrow);
+  }
+  .footer-bottom a{color:var(--eyebrow);text-decoration:none;border-bottom:1px solid rgba(169,155,187,.4);padding-bottom:2px}
+  .footer-bottom a:hover{color:var(--lilac)}
+
+  @media(max-width:760px){
+    nav{padding:1.1rem 1.4rem;gap:1rem}
+    .logo{font-size:1.2rem}
+    .nav-links{gap:1.1rem}
+    .nav-links a:not(.pill){display:none}
+    .pill{padding:.68rem 1.3rem;font-size:.88rem}
+    header{padding-top:3.5rem}
+    .posts{padding:0 1.4rem;margin-top:3rem;gap:1.5rem}
+    .card{padding:2rem 1.7rem 1.8rem}
+    footer{padding:3.5rem 1.4rem 2rem;margin-top:4rem}
+    .footer-bottom{flex-direction:column;gap:1rem;margin-top:3rem}
+  }
 </style>
 </head>
 <body>
 
 <nav>
-  <a class="wordmark" href="index.html">y2k vintage clothing</a>
-  <div class="links">
-    <a class="plain" href="index.html#collection">collection</a>
-    <a class="plain" href="journal.html">journal</a>
-    <a class="btn" href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">shop on depop ✿</a>
+  <a href="index.html" class="logo">y2k vintage clothing</a>
+  <div class="nav-links">
+    <a href="index.html#collection">collection</a>
+    <a href="journal.html">journal</a>
+    <a href="https://www.depop.com/fairytqles" class="pill">shop on depop ✿</a>
   </div>
 </nav>
 
-<header class="hero">
-  <p class="eyebrow">the journal</p>
+<header>
+  <div class="eyebrow">the journal</div>
   <h1>styling notes &amp; <em>little obsessions</em></h1>
-  <p class="sub">Outfit ideas, thrifting stories, and ways to wear your one-of-a-kind finds. Written slowly, like everything here.</p>
+  <p>Outfit ideas, thrifting stories, and ways to wear your one-of-a-kind finds. Written slowly, like everything here.</p>
 </header>
 
 <section class="posts">
-  <a class="post-card" href="y2k-rhinestone-baby-tee-outfits.html">
-    <div class="kicker">Y2K styling</div>
+
+  <a href="fairycore-y2k-styling-guide.html" class="card">
+    <div class="eyebrow">fairycore styling</div>
+    <h2>Fairycore Meets Y2K: How to Wear Sparkle and Softness Together</h2>
+    <p>Two aesthetics that borrow from each other more than they admit. What fairycore actually is, what to thrift for it, and three ways to wear it with your Y2K pieces.</p>
+    <span class="read">read the post ✿</span>
+  </a>
+
+  <a href="y2k-rhinestone-baby-tee-outfits.html" class="card">
+    <div class="eyebrow">Y2K styling</div>
     <h2>How to Style a Y2K Rhinestone Baby Tee: 5 Outfit Ideas</h2>
     <p>The baby tee is the little black dress of Y2K. Five ways to wear one — from low-rise denim to soft fairycore layering — using pieces you probably already own.</p>
     <span class="read">read the post ✿</span>
   </a>
-  <a class="post-card" href="y2k-aesthetic-thrifted-guide.html">
-    <div class="kicker">Y2K styling</div>
+
+  <a href="y2k-aesthetic-thrifted-guide.html" class="card">
+    <div class="eyebrow">Y2K styling</div>
     <h2>The Y2K Aesthetic, Explained: Building the Look from Thrifted Finds</h2>
     <p>What actually makes an outfit "Y2K," the key pieces to hunt for secondhand, and how to make the look feel like you instead of a costume.</p>
     <span class="read">read the post ✿</span>
   </a>
+
 </section>
 
 <footer>
-  <h5>Find something <em>worth keeping</em>.</h5>
-  <a class="btn cta" href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">@fairytqles on depop ✿</a>
-  <div class="fine">
+  <h2>Find something <em>worth keeping</em>.</h2>
+  <a href="https://www.depop.com/fairytqles" class="pill">@fairytqles on depop ✿</a>
+  <div class="footer-bottom">
     <span>© 2026 Y2K Vintage Clothing</span>
-    <a href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">depop.com/fairytqles</a>
+    <a href="https://www.depop.com/fairytqles">depop.com/fairytqles</a>
   </div>
 </footer>
 
