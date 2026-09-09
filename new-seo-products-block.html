@@ -1,0 +1,40 @@
+<!-- ============================================================
+     BLOCK 2 of 2 — the hidden SEO copy of your products
+     ------------------------------------------------------------
+     This is the part that's easy to forget. Your products are
+     listed TWICE in index.html: once as visible cards, and once
+     as invisible data that Google reads. If you only update the
+     cards, Google keeps showing your sold-out items.
+
+     At the very BOTTOM of index.html, find the last block that
+     starts with:
+
+         <script type="application/ld+json">
+         {
+           "@context": "https://schema.org",
+           "@type": "ItemList",
+
+     Delete that whole block, all the way through its closing
+     </script>, and paste this in its place.
+
+     (Careful: there are two ld+json blocks. Leave the first one
+      — "@type": "Store" — exactly as it is. Only replace the
+      ItemList one.)
+     ============================================================ -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {"@type":"Product","name":"BONGO lace-trim denim shorts","category":"Y2K vintage shorts","image":"https://media-photos.depop.com/b1/18530323/4649806030_a5d30110aed241a09df2f038c22c3cb2/P0.jpg","url":"https://www.depop.com/products/fairytqlys-cute-bongo-blue-denim-shorts-fdc6/","offers":{"@type":"Offer","price":"23.80","priceCurrency":"USD","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/UsedCondition"}},
+    {"@type":"Product","name":"Black and lime floral blouse","category":"Y2K vintage top","image":"https://media-photos.depop.com/r1/18530323/4649792311_5605fdb0420b4e68bf635c323a665d01/P0.jpg","url":"https://www.depop.com/products/fair7tqles-cute-y2k-black-and-lime-3396/","offers":{"@type":"Offer","price":"17.50","priceCurrency":"USD","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/UsedCondition"}},
+    {"@type":"Product","name":"Green floral mesh tank","category":"Y2K vintage top","image":"https://media-photos.depop.com/r1/18530323/4638468619_9a21284087e040adb39de9cc051f4ecc/P0.jpg","url":"https://www.depop.com/products/faiiytqles-cute-green-floral-mesh-tank-a592/","offers":{"@type":"Offer","price":"8.05","priceCurrency":"USD","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/UsedCondition"}},
+    {"@type":"Product","name":"Mint cable knit sweater","category":"Vintage knitwear","image":"https://media-photos.depop.com/r1/18530323/4635581844_a65a64d3624a48f5a340e7ea36aa0d6b/P0.jpg","url":"https://www.depop.com/products/fairytqleh-cute-brandy-melville-mint-cable-599d/","offers":{"@type":"Offer","price":"16.45","priceCurrency":"USD","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/UsedCondition"}},
+    {"@type":"Product","name":"Ribbon bow ruffle collar sweater","category":"Vintage knitwear","image":"https://media-photos.depop.com/b1/18530323/4632579553_a7cff5c76d9a4065893e6b76f4357e9e/P0.jpg","url":"https://www.depop.com/products/fairytqlds-cute-japanese-ribbon-bow-ruffle-d954/","offers":{"@type":"Offer","price":"24.85","priceCurrency":"USD","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/UsedCondition"}},
+    {"@type":"Product","name":"Fairy paisley ruffle blouse","category":"Y2K vintage top","image":"https://media-photos.depop.com/b1/18530323/4267916083_e8878ce0258b4db883cdba9f7e725de6/P0.jpg","url":"https://www.depop.com/products/fairytql9s-y2k-fairy-paisley-print-blouse-0abc/","offers":{"@type":"Offer","price":"17.50","priceCurrency":"USD","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/UsedCondition"}},
+    {"@type":"Product","name":"Red floral 3/4 sleeve blouse","category":"Y2K vintage top","image":"https://media-photos.depop.com/r1/18530323/4461130616_d097606d29d84fb694259123379f5a64/P0.jpg","url":"https://www.depop.com/products/fairytq2es-cute-y2k-red-floral-print-6e16/","offers":{"@type":"Offer","price":"17.50","priceCurrency":"USD","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/UsedCondition"}},
+    {"@type":"Product","name":"Light pink lace tank","category":"Y2K vintage top","image":"https://media-photos.depop.com/b1/18530323/4632558702_4c7f7b4541734c188f6a8fa751719a86/P0.jpg","url":"https://www.depop.com/products/fairytqlew-cute-light-pink-lace-tank-2f8f/","offers":{"@type":"Offer","price":"9.10","priceCurrency":"USD","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/UsedCondition"}}
+  ]
+}
+</script>
