@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#0e0e0e">
+
+<title>How to Style a Y2K Mesh Top: 5 Ways to Wear It Now | Y2K Vintage Clothing</title>
+<meta name="description" content="Five easy ways to style a vintage Y2K mesh top without making the outfit feel like a costume.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    color-scheme:light only;
+    --bg:#fdf1f5;
+    --ink:#141414;
+    --muted:#8d7480;
+    --rose:#c9799a;
+    --rose-soft:#f4c3d6;
+    --line:#f0d5e0;
+    --black:#0e0e0e;
+    --serif:'Playfair Display', Georgia, serif;
+    --sans:'Jost', sans-serif;
+    --body:'Nunito Sans', sans-serif;
+    --dust:radial-gradient(circle, #ffd35f 0 .7px, rgba(240,190,70,1) .7px 1.1px, transparent 1.9px),radial-gradient(circle, #ffca47 0 .58px, rgba(226,170,55,1) .58px .9px, transparent 1.6px),radial-gradient(circle, #ffdf85 0 .64px, rgba(245,200,90,1) .64px 1px, transparent 1.7px);
+    --dust-size:152px 152px,116px 116px,196px 196px;
+    --dust-pos:0 0,40px 50px,80px 24px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;background:#fdf1f5}
+  body{
+    background:var(--bg); color:var(--ink); font-family:var(--body); font-weight:300;
+    line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  a:hover{text-decoration:none}
+  .sparkle{
+    position:fixed;inset:0;z-index:0;pointer-events:none;
+    background-image:var(--dust);background-size:var(--dust-size);background-position:var(--dust-pos);
+    filter:drop-shadow(0 0 2.6px rgba(255,190,70,.85)) drop-shadow(0 0 1.2px rgba(255,208,105,.9));
+    animation:twinkle 5s ease-in-out infinite;
+  }
+  @keyframes twinkle{0%,100%{opacity:.38}50%{opacity:.55}}
+  @media (prefers-reduced-motion:reduce){.sparkle{animation:none;opacity:.5}}
+
+  .wrap{max-width:1240px;margin:0 auto;padding:0 40px;position:relative;z-index:1}
+  .eyebrow{
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.42em;
+    font-size:.72rem;color:var(--muted);font-weight:400;
+  }
+  h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:.01em}
+
+  header.site{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:9px 48px;background:#0e0e0e;transition:box-shadow .3s ease;
+  }
+  header.site.scrolled{box-shadow:0 1px 0 rgba(255,255,255,.08)}
+  .logo{font-family:var(--sans);font-weight:500;letter-spacing:.32em;font-size:.92rem;color:#fff}
+  nav.primary{display:flex;align-items:center;gap:42px}
+  nav.primary a{
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.22em;
+    font-size:.74rem;color:#fff;transition:color .2s ease;
+  }
+  nav.primary a:hover,nav.primary a.current{color:var(--rose-soft)}
+  .menu-btn{display:none;background:none;border:none;cursor:pointer}
+
+  .mobile-nav{position:fixed;inset:0;z-index:60;visibility:hidden;pointer-events:none}
+  .mobile-nav .overlay{position:absolute;inset:0;background:rgba(0,0,0,.5);opacity:0;transition:opacity .3s ease}
+  .mobile-nav .panel{
+    position:absolute;top:0;right:0;height:100%;width:min(80vw,320px);background:#0e0e0e;
+    transform:translateX(100%);transition:transform .32s ease;display:flex;flex-direction:column;
+    padding:78px 32px 40px;gap:4px;box-shadow:-14px 0 40px rgba(0,0,0,.4)
+  }
+  .mobile-nav.open{visibility:visible;pointer-events:auto}
+  .mobile-nav.open .overlay{opacity:1}
+  .mobile-nav.open .panel{transform:translateX(0)}
+  .mobile-nav a{
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.2em;font-size:.82rem;
+    color:#fff;padding:18px 2px;border-bottom:1px solid rgba(255,255,255,.08);transition:color .2s ease
+  }
+  .mobile-nav a:hover{color:var(--rose-soft)}
+  .mobile-nav .close{position:absolute;top:20px;right:22px;background:none;border:none;color:#fff;cursor:pointer;padding:6px;line-height:0}
+
+  .article-hero{padding:170px 0 45px;position:relative}
+  .article-head{text-align:center;max-width:850px;margin:0 auto}
+  .article-head h1{font-size:clamp(2.7rem,5vw,4.25rem);line-height:1.1;margin-top:15px}
+  .article-head h1 em{font-style:italic;color:var(--rose)}
+  .rule{width:64px;height:2px;background:var(--rose);margin:26px auto 0}
+  .lede{max-width:620px;margin:30px auto 0;text-align:center;font-size:1.05rem;color:#55434a;line-height:1.75}
+  .meta{
+    margin-top:24px;font-family:var(--sans);font-size:.66rem;text-transform:uppercase;
+    letter-spacing:.2em;color:var(--muted)
+  }
+
+  article{
+    max-width:760px;margin:0 auto;padding:25px 0 100px;position:relative;z-index:1;
+  }
+  article p{font-size:1rem;line-height:1.85;color:#3f3036;margin-bottom:25px}
+  article p strong{font-weight:600;color:var(--ink)}
+  article h2{
+    font-size:2rem;line-height:1.2;margin:62px 0 19px;
+  }
+  article h2 .number{color:var(--rose);font-family:var(--sans);font-size:.68em;letter-spacing:.15em;margin-right:10px}
+  article em{font-family:var(--serif)}
+  .divider{text-align:center;color:var(--rose);font-size:15px;letter-spacing:1.2em;padding-left:1.2em;margin:55px 0;opacity:.7}
+  .formula{
+    margin:42px 0;padding:30px 34px;background:#fff;border-left:3px solid var(--rose);
+    font-family:var(--serif);font-size:1.25rem;line-height:1.55;
+  }
+  .shop-note{
+    margin-top:50px;padding:28px 0 0;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.9rem;line-height:1.75;
+  }
+
+  .closing{text-align:center;padding:20px 0 105px;position:relative;z-index:1}
+  .closing h2{font-size:2.9rem;margin-top:14px;line-height:1.12}
+  .closing h2 em{font-style:italic;color:var(--rose)}
+  .closing .lede{max-width:480px;margin:36px auto 40px;color:#55434a;font-size:1.05rem}
+  .btn{
+    display:inline-block;background:var(--ink);color:#fff;border:1px solid var(--ink);
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;
+    padding:17px 34px;cursor:pointer;transition:opacity .2s ease;
+  }
+  .btn:hover{opacity:.82}
+
+  footer{
+    background:var(--black);color:#fceaf1;text-align:center;
+    padding:26px 20px 30px;position:relative;z-index:2;overflow:hidden;
+  }
+  footer .fine{
+    display:flex;justify-content:center;align-items:center;gap:26px;flex-wrap:wrap;
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.28em;font-size:.7rem;color:#eec4d5;
+  }
+  footer .fine a{border-bottom:1px solid var(--rose);padding-bottom:2px;transition:color .2s ease}
+  footer .fine a:hover{color:#fff}
+  footer .mark{
+    position:absolute;right:34px;bottom:8px;font-size:1.7rem;color:rgba(255,255,255,.16);
+    font-family:var(--serif);letter-spacing:.1em;
+  }
+
+  @media(max-width:760px){
+    .wrap{padding:0 24px}
+    header.site{padding:20px 24px}
+    nav.primary{display:none}
+    .menu-btn{display:flex}
+    .article-hero{padding:130px 0 30px}
+    .article-head h1{font-size:2.35rem}
+    article{padding:15px 24px 75px}
+    article h2{font-size:1.7rem;margin-top:50px}
+    article p{font-size:.96rem}
+    .formula{padding:25px 24px}
+    .closing h2{font-size:2.1rem}
+    footer .fine{flex-direction:column;gap:12px}
+  }
+</style>
+</head>
+
+<body>
+<div class="sparkle"></div>
+
+<header class="site" id="header">
+  <a href="index.html" class="logo">Y2K VINTAGE CLOTHING</a>
+  <nav class="primary">
+    <a href="index.html#collection">Collection</a>
+    <a href="index.html#about">About</a>
+    <a href="journal.html" class="current">Journal</a>
+    <a href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">Shop on Depop</a>
+  </nav>
+  <button class="menu-btn" aria-label="Open menu">
+    <svg width="26" height="26" viewBox="0 0 24 24" stroke="#ffffff" stroke-width="1.4" fill="none"><path d="M4 8h16M4 16h16"/></svg>
+  </button>
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <div class="overlay" data-close></div>
+  <nav class="panel" aria-label="Mobile navigation">
+    <button class="close" aria-label="Close menu" data-close>
+      <svg width="26" height="26" viewBox="0 0 24 24" stroke="#ffffff" stroke-width="1.4" fill="none"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <a href="index.html#collection" data-close>Collection</a>
+    <a href="index.html#about" data-close>About</a>
+    <a href="journal.html" data-close>Journal</a>
+    <a href="https://www.depop.com/fairytqles" target="_blank" rel="noopener" data-close>Shop on Depop</a>
+  </nav>
+</div>
+
+<main>
+  <section class="article-hero">
+    <div class="wrap">
+      <div class="article-head">
+        <p class="eyebrow">Y2K Styling</p>
+        <h1>How to Style a Y2K Mesh Top: <em>5 Ways to Wear It Now</em></h1>
+        <div class="rule"></div>
+        <p class="lede">
+          A vintage mesh top can be the strangest thing on the hanger and the easiest thing in your wardrobe.
+          Five simple ways to wear one without making the outfit feel like a costume.
+        </p>
+        <p class="meta">A Y2K Vintage Clothing Styling Guide · 6 Min Read</p>
+      </div>
+    </div>
+  </section>
+
+  <article>
+    <p>There are some vintage pieces that look slightly strange on the hanger and completely right once you put them on.</p>
+    <p>A Y2K mesh top is one of them.</p>
+    <p>Maybe it's covered in tiny flowers. Maybe it has rhinestones, a weird little graphic, or sleeves that are somehow both too long and too short. Maybe it's sheer enough that you're not entirely sure what you're supposed to wear underneath it.</p>
+    <p>That's part of the fun.</p>
+    <p>Mesh tops were everywhere in the late '90s and early 2000s, and they're one of those pieces that can still feel surprisingly modern when styled simply. The trick is not to recreate an entire 2002 outfit from head to toe.</p>
+    <p><strong>Let the top be the interesting part.</strong></p>
+
+    <h2><span class="number">01</span> With low-rise jeans</h2>
+    <p>The obvious combination is usually the obvious combination for a reason.</p>
+    <p>A fitted mesh top with low-rise jeans gives you that unmistakable early-2000s silhouette without requiring much else. Look for jeans that sit naturally on the hips rather than going extremely low, especially if you're new to the look.</p>
+    <p>Add a small shoulder bag and simple shoes. That's enough.</p>
+    <p>If the mesh top is especially busy — think rhinestones, lace, butterflies, or a loud print — keep the denim simple. Vintage does not have to mean maximum everything.</p>
+
+    <h2><span class="number">02</span> Over a tiny tank</h2>
+    <p>This is probably the easiest way to wear a sheer vintage top if you're not sure about it yet.</p>
+    <p>Try a fitted tank underneath in a color pulled from the print. A black mesh top over a black tank feels sleek; a pastel floral top over a white or baby-pink tank feels softer.</p>
+    <p>You can also experiment with contrast. A delicate floral mesh top over a plain white tank and faded jeans has a completely different feeling from the same top worn over black.</p>
+    <p>The top stays the star either way.</p>
+
+    <h2><span class="number">03</span> With a mini skirt</h2>
+    <p>For a more dressed-up Y2K look, try a mesh top with a simple mini skirt.</p>
+    <p>The important word here is <em>simple</em>.</p>
+    <p>If the top already has a lot going on, you don't need a complicated skirt. Denim, black, or a soft neutral works beautifully.</p>
+    <p>Add a tiny bag or a pair of understated earrings and stop there.</p>
+    <p>One of my favorite things about vintage styling is knowing when not to add another thing.</p>
+
+    <h2><span class="number">04</span> Layer it over a baby tee</h2>
+    <p>This is for the days when you want the mesh but don't want the outfit to feel too delicate.</p>
+    <p>Start with a fitted baby tee underneath and pull the mesh top over it. A graphic tee works particularly well if the mesh is relatively plain.</p>
+    <p>You get the texture and shape of the vintage top without having to commit to the full sheer look.</p>
+    <p>It's also a good way to mix pieces from slightly different eras. Vintage doesn't need to be a perfectly preserved time capsule. Your wardrobe doesn't have to make chronological sense.</p>
+
+    <h2><span class="number">05</span> Let it be the weird piece</h2>
+    <p>This might be my favorite option.</p>
+    <p>Find the mesh top that you almost didn't buy because it was a little strange.</p>
+    <p>The one with the tiny cherries. The slightly faded rhinestones. The unusual neckline. The print that makes absolutely no sense.</p>
+    <p>Wear it with your most boring jeans.</p>
+    <p>Or a plain black skirt.</p>
+    <p>Or sneakers you wear all the time.</p>
+    <p>The contrast is what makes it work.</p>
+    <p>When every piece in an outfit is trying to announce that it's Y2K, the outfit can start to feel like a costume. One genuinely unusual vintage piece surrounded by everyday clothes usually feels much more natural.</p>
+
+    <p class="divider">✿ ✧ ✿</p>
+
+    <h2>Finding one secondhand</h2>
+    <p>If you're looking for a mesh top while thrifting, don't search only for "Y2K mesh top." Vintage clothing doesn't always identify itself that way.</p>
+    <p>Try looking through tops from the late '90s and early 2000s, especially pieces made from stretch mesh, sheer polyester, nylon, or lightweight stretch fabric. Check the seams carefully, particularly around the cuffs and underarms.</p>
+    <p>And don't worry too much about the label size.</p>
+    <p>A vintage mesh top is often designed to fit closely, so the measurements are much more useful than the number or letter on the tag. If you're shopping online, compare the flat measurements to a top you already own and like. That's usually much more reliable than guessing from the label.</p>
+
+    <div class="formula"><strong>The easiest formula:</strong><br>Vintage mesh top + simple jeans + small bag + shoes you actually wear.</div>
+
+    <p>Then change one thing.</p>
+    <p>Try a skirt instead of jeans. A baby tee instead of a tank. A different color underneath.</p>
+    <p>You don't need to build an entire Y2K outfit around one vintage find.</p>
+    <p>Sometimes the best vintage outfits are the ones where the strange little piece looks like it has always belonged in your wardrobe.</p>
+    <p>And if it doesn't?</p>
+    <p><strong>Wear it anyway.</strong></p>
+    <p>That's half the fun of finding it.</p>
+
+    <div class="shop-note">
+      Mesh, Y2K and vintage pieces land in the collection regularly. Follow along on Depop to see each one-off find when it's listed.
+    </div>
+  </article>
+
+  <section class="closing">
+    <div class="wrap">
+      <p class="eyebrow">Stay Connected</p>
+      <h2>Find Something <em>Worth Keeping</em></h2>
+      <div class="rule"></div>
+      <p class="lede">New pieces land every week. Follow along on Depop to see each find the moment it's listed.</p>
+      <a class="btn" href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">@fairytqles on Depop</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="fine">
+    <span>© 2026 Y2K Vintage Clothing</span>
+    <a href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">depop.com/fairytqles</a>
+  </div>
+  <div class="mark" aria-hidden="true">✿</div>
+</footer>
+
+<script>
+  const header = document.getElementById('header');
+  addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', (window.scrollY || window.pageYOffset || 0) > 40);
+  }, { passive:true });
+
+  const menuBtn = document.querySelector('.menu-btn');
+  const mobileNav = document.getElementById('mobileNav');
+  const setNav = (open) => {
+    mobileNav.classList.toggle('open', open);
+    mobileNav.setAttribute('aria-hidden', open ? 'false' : 'true');
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+
+  if(menuBtn && mobileNav){
+    menuBtn.addEventListener('click', () => setNav(true));
+    mobileNav.querySelectorAll('[data-close]').forEach(el =>
+      el.addEventListener('click', () => setNav(false))
+    );
+    addEventListener('keydown', e => { if(e.key === 'Escape') setNav(false); });
+  }
+
+  const dustLayers = document.querySelectorAll('.sparkle');
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const dustPos = (y,d) =>
+    `0 ${(-y*.5-d).toFixed(1)}px, 40px ${(50-y*.72-d*.65).toFixed(1)}px, 80px ${(24-y*.32-d*1.35).toFixed(1)}px`;
+
+  if(reduceMotion){
+    const onScroll = () => dustLayers.forEach(el => {
+      el.style.backgroundPosition = dustPos(window.scrollY || 0, 0);
+    });
+    addEventListener('scroll', onScroll, { passive:true });
+    onScroll();
+  } else {
+    const loop = ts => {
+      const y = window.scrollY || window.pageYOffset || 0;
+      const drift = Math.sin(ts/2600)*130;
+      dustLayers.forEach(el => { el.style.backgroundPosition = dustPos(y, drift); });
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  }
+</script>
+</body>
+</html>
