@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#0e0e0e">
+
+<title>How to Style Vintage Clothing Into Modern Outfits | Y2K Vintage Clothing</title>
+<meta name="description" content="Five simple ways to wear vintage pieces so they read as modern, not costume — from anchoring with basics to mixing eras on purpose.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    color-scheme:light only;
+    --bg:#fdf1f5;
+    --ink:#141414;
+    --muted:#8d7480;
+    --rose:#c9799a;
+    --rose-soft:#f4c3d6;
+    --line:#f0d5e0;
+    --black:#0e0e0e;
+    --serif:'Playfair Display', Georgia, serif;
+    --sans:'Jost', sans-serif;
+    --body:'Nunito Sans', sans-serif;
+    --dust:radial-gradient(circle, #ffd35f 0 .7px, rgba(240,190,70,1) .7px 1.1px, transparent 1.9px),radial-gradient(circle, #ffca47 0 .58px, rgba(226,170,55,1) .58px .9px, transparent 1.6px),radial-gradient(circle, #ffdf85 0 .64px, rgba(245,200,90,1) .64px 1px, transparent 1.7px);
+    --dust-size:152px 152px,116px 116px,196px 196px;
+    --dust-pos:0 0,40px 50px,80px 24px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;background:#fdf1f5}
+  body{
+    background:var(--bg); color:var(--ink); font-family:var(--body); font-weight:300;
+    line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  a:hover{text-decoration:none}
+  .sparkle{
+    position:fixed;inset:0;z-index:0;pointer-events:none;
+    background-image:var(--dust);background-size:var(--dust-size);background-position:var(--dust-pos);
+    filter:drop-shadow(0 0 2.6px rgba(255,190,70,.85)) drop-shadow(0 0 1.2px rgba(255,208,105,.9));
+    animation:twinkle 5s ease-in-out infinite;
+  }
+  @keyframes twinkle{0%,100%{opacity:.38}50%{opacity:.55}}
+  @media (prefers-reduced-motion:reduce){.sparkle{animation:none;opacity:.5}}
+
+  .wrap{max-width:1240px;margin:0 auto;padding:0 40px;position:relative;z-index:1}
+  .eyebrow{
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.42em;
+    font-size:.72rem;color:var(--muted);font-weight:400;
+  }
+  h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:.01em}
+
+  header.site{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:9px 48px;background:#0e0e0e;transition:box-shadow .3s ease;
+  }
+  header.site.scrolled{box-shadow:0 1px 0 rgba(255,255,255,.08)}
+  .logo{font-family:var(--sans);font-weight:500;letter-spacing:.32em;font-size:.92rem;color:#fff}
+  nav.primary{display:flex;align-items:center;gap:42px}
+  nav.primary a{
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.22em;
+    font-size:.74rem;color:#fff;transition:color .2s ease;
+  }
+  nav.primary a:hover,nav.primary a.current{color:var(--rose-soft)}
+  .menu-btn{display:none;background:none;border:none;cursor:pointer}
+
+  .mobile-nav{position:fixed;inset:0;z-index:60;visibility:hidden;pointer-events:none}
+  .mobile-nav .overlay{position:absolute;inset:0;background:rgba(0,0,0,.5);opacity:0;transition:opacity .3s ease}
+  .mobile-nav .panel{
+    position:absolute;top:0;right:0;height:100%;width:min(80vw,320px);background:#0e0e0e;
+    transform:translateX(100%);transition:transform .32s ease;display:flex;flex-direction:column;
+    padding:78px 32px 40px;gap:4px;box-shadow:-14px 0 40px rgba(0,0,0,.4)
+  }
+  .mobile-nav.open{visibility:visible;pointer-events:auto}
+  .mobile-nav.open .overlay{opacity:1}
+  .mobile-nav.open .panel{transform:translateX(0)}
+  .mobile-nav a{
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.2em;font-size:.82rem;
+    color:#fff;padding:18px 2px;border-bottom:1px solid rgba(255,255,255,.08);transition:color .2s ease
+  }
+  .mobile-nav a:hover{color:var(--rose-soft)}
+  .mobile-nav .close{position:absolute;top:20px;right:22px;background:none;border:none;color:#fff;cursor:pointer;padding:6px;line-height:0}
+
+  .article-hero{padding:170px 0 45px;position:relative}
+  .article-head{text-align:center;max-width:850px;margin:0 auto}
+  .article-head h1{font-size:clamp(2.7rem,5vw,4.25rem);line-height:1.1;margin-top:15px}
+  .article-head h1 em{font-style:italic;color:var(--rose)}
+  .rule{width:64px;height:2px;background:var(--rose);margin:26px auto 0}
+  .lede{max-width:620px;margin:30px auto 0;text-align:center;font-size:1.05rem;color:#55434a;line-height:1.75}
+  .meta{
+    margin-top:24px;font-family:var(--sans);font-size:.66rem;text-transform:uppercase;
+    letter-spacing:.2em;color:var(--muted)
+  }
+
+  article{
+    max-width:760px;margin:0 auto;padding:25px 0 100px;position:relative;z-index:1;
+  }
+  article p{font-size:1rem;line-height:1.85;color:#3f3036;margin-bottom:25px}
+  article p strong{font-weight:600;color:var(--ink)}
+  article h2{
+    font-size:2rem;line-height:1.2;margin:62px 0 19px;
+  }
+  article h2 .number{color:var(--rose);font-family:var(--sans);font-size:.68em;letter-spacing:.15em;margin-right:10px}
+  article em{font-family:var(--serif)}
+  .divider{text-align:center;color:var(--rose);font-size:15px;letter-spacing:1.2em;padding-left:1.2em;margin:55px 0;opacity:.7}
+  .formula{
+    margin:42px 0;padding:30px 34px;background:#fff;border-left:3px solid var(--rose);
+    font-family:var(--serif);font-size:1.25rem;line-height:1.55;
+  }
+  .shop-note{
+    margin-top:50px;padding:28px 0 0;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.9rem;line-height:1.75;
+  }
+
+  .closing{text-align:center;padding:20px 0 105px;position:relative;z-index:1}
+  .closing h2{font-size:2.9rem;margin-top:14px;line-height:1.12}
+  .closing h2 em{font-style:italic;color:var(--rose)}
+  .closing .lede{max-width:480px;margin:36px auto 40px;color:#55434a;font-size:1.05rem}
+  .btn{
+    display:inline-block;background:var(--ink);color:#fff;border:1px solid var(--ink);
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;
+    padding:17px 34px;cursor:pointer;transition:opacity .2s ease;
+  }
+  .btn:hover{opacity:.82}
+
+  footer{
+    background:var(--black);color:#fceaf1;text-align:center;
+    padding:26px 20px 30px;position:relative;z-index:2;overflow:hidden;
+  }
+  footer .fine{
+    display:flex;justify-content:center;align-items:center;gap:26px;flex-wrap:wrap;
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.28em;font-size:.7rem;color:#eec4d5;
+  }
+  footer .fine a{border-bottom:1px solid var(--rose);padding-bottom:2px;transition:color .2s ease}
+  footer .fine a:hover{color:#fff}
+  footer .mark{
+    position:absolute;right:34px;bottom:8px;font-size:1.7rem;color:rgba(255,255,255,.16);
+    font-family:var(--serif);letter-spacing:.1em;
+  }
+
+  @media(max-width:760px){
+    .wrap{padding:0 24px}
+    header.site{padding:20px 24px}
+    nav.primary{display:none}
+    .menu-btn{display:flex}
+    .article-hero{padding:130px 0 30px}
+    .article-head h1{font-size:2.35rem}
+    article{padding:15px 24px 75px}
+    article h2{font-size:1.7rem;margin-top:50px}
+    article p{font-size:.96rem}
+    .formula{padding:25px 24px}
+    .closing h2{font-size:2.1rem}
+    footer .fine{flex-direction:column;gap:12px}
+  }
+</style>
+</head>
+
+<body>
+<div class="sparkle"></div>
+
+<header class="site" id="header">
+  <a href="index.html" class="logo">Y2K VINTAGE CLOTHING</a>
+  <nav class="primary">
+    <a href="index.html#collection">Collection</a>
+    <a href="index.html#about">About</a>
+    <a href="journal.html" class="current">Journal</a>
+    <a href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">Shop on Depop</a>
+  </nav>
+  <button class="menu-btn" aria-label="Open menu">
+    <svg width="26" height="26" viewBox="0 0 24 24" stroke="#ffffff" stroke-width="1.4" fill="none"><path d="M4 8h16M4 16h16"/></svg>
+  </button>
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <div class="overlay" data-close></div>
+  <nav class="panel" aria-label="Mobile navigation">
+    <button class="close" aria-label="Close menu" data-close>
+      <svg width="26" height="26" viewBox="0 0 24 24" stroke="#ffffff" stroke-width="1.4" fill="none"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <a href="index.html#collection" data-close>Collection</a>
+    <a href="index.html#about" data-close>About</a>
+    <a href="journal.html" data-close>Journal</a>
+    <a href="https://www.depop.com/fairytqles" target="_blank" rel="noopener" data-close>Shop on Depop</a>
+  </nav>
+</div>
+
+<main>
+  <section class="article-hero">
+    <div class="wrap">
+      <div class="article-head">
+        <p class="eyebrow">Buying Vintage</p>
+        <h1>How to Style Vintage Clothing Into <em>Modern Outfits</em></h1>
+        <div class="rule"></div>
+        <p class="lede">
+          The goal was never to look like you time-traveled out of a decade. Five ways to wear
+          vintage so it reads as your style right now, not a costume.
+        </p>
+        <p class="meta">A Y2K Vintage Clothing Styling Guide · 6 Min Read</p>
+      </div>
+    </div>
+  </section>
+
+  <article>
+    <p>There's a specific feeling that happens the first time you wear a truly great vintage piece out of the house.</p>
+    <p>Half confidence, half "is this too much."</p>
+    <p>It usually isn't too much. It just needs the right frame.</p>
+    <p>Vintage pieces are often more interesting than anything you'll find on a current rack — better fabric, stranger prints, details nobody bothers making anymore. But an outfit built entirely out of one era can start to feel like a reenactment instead of an outfit.</p>
+    <p><strong>The trick is balance, not restraint.</strong></p>
+
+    <h2><span class="number">01</span> Anchor with one modern basic</h2>
+    <p>The fastest way to make a vintage piece feel current is to put it next to something that obviously isn't vintage at all.</p>
+    <p>A slip you found secondhand looks like a costume with vintage shoes and a vintage bag. The same slip with your everyday sneakers and a plain crewneck tied at the waist looks like an outfit.</p>
+    <p>Pick one piece from your regular rotation — jeans, a white tee, plain trainers — and build around it. That single modern anchor is often all a vintage piece needs.</p>
+
+    <h2><span class="number">02</span> Let one era speak, keep the rest quiet</h2>
+    <p>Most outfits fall apart the moment two loud vintage pieces try to share the spotlight.</p>
+    <p>If the blouse has statement sleeves, let the bottom half be simple. If the skirt has a busy print, keep the top plain. Treat your vintage find the way you'd treat any statement piece — as the one thing the outfit is about.</p>
+    <p>Everything else is there to hold it up, not compete with it.</p>
+
+    <h2><span class="number">03</span> Mix decades on purpose</h2>
+    <p>A common instinct is to keep an outfit "period accurate" — all '70s, all '90s, all one moment in time.</p>
+    <p>You don't have to.</p>
+    <p>Some of the best vintage outfits pull from several decades at once: a '70s blouse, '90s jeans, and current shoes. Nothing about that combination reads as costume, because nothing about it is trying to recreate a single year. It just reads as someone with a good eye.</p>
+    <p>Your wardrobe doesn't need to make chronological sense. It needs to make sense on you.</p>
+
+    <h2><span class="number">04</span> Tailor the fit, not the item</h2>
+    <p>A lot of vintage clothing was cut for different proportions than what feels current now — boxier through the shoulder, higher on the waist, longer in the hem.</p>
+    <p>You don't need to give up the piece. You usually just need to adjust how it's worn.</p>
+    <p>Tuck it in instead of leaving it loose. Cuff the sleeves. Belt a dress that was cut looser than you'd wear it today. Small adjustments like these do more to modernize a piece than trying to find a "less vintage" version of it.</p>
+
+    <h2><span class="number">05</span> Give it a shoe from this decade</h2>
+    <p>Shoes date an outfit faster than almost anything else.</p>
+    <p>A vintage dress with vintage-style shoes can tip an outfit firmly into costume territory. The same dress with the sneakers, boots, or sandals you already wear grounds it immediately in the present.</p>
+    <p>This is one of the simplest styling rules and also one of the most reliable. When in doubt, let your feet be the most modern part of the outfit.</p>
+
+    <p class="divider">✿ ✧ ✿</p>
+
+    <h2>Building a wardrobe that mixes well</h2>
+    <p>If you're shopping vintage regularly, it helps to think less about individual outfits and more about pieces that will play well with what you already own.</p>
+    <p>A great vintage top is only as useful as the plain jeans, simple skirts, and everyday shoes you already have to pair it with. Before buying, ask whether a piece has at least two or three things in your closet it could realistically go with. If the honest answer is none, it might be better as a rare, occasional statement rather than a wardrobe staple.</p>
+    <p>Neither answer is wrong. Just know which one you're buying.</p>
+
+    <div class="formula"><strong>The easiest formula:</strong><br>One vintage statement piece + one modern basic + shoes you already wear.</div>
+
+    <p>Then adjust from there.</p>
+    <p>Swap the basic. Change the shoe. Add a belt.</p>
+    <p>The goal isn't to look like you stepped out of a specific year. It's to look like yourself, wearing something with more history in it than most of what's on the racks right now.</p>
+    <p><strong>That's the whole appeal.</strong></p>
+
+    <div class="shop-note">
+      New vintage pieces land in the collection regularly. Follow along on Depop to see each one-off find when it's listed.
+    </div>
+  </article>
+
+  <section class="closing">
+    <div class="wrap">
+      <p class="eyebrow">Stay Connected</p>
+      <h2>Find Something <em>Worth Keeping</em></h2>
+      <div class="rule"></div>
+      <p class="lede">New pieces land every week. Follow along on Depop to see each find the moment it's listed.</p>
+      <a class="btn" href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">@fairytqles on Depop</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="fine">
+    <span>© 2026 Y2K Vintage Clothing</span>
+    <a href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">depop.com/fairytqles</a>
+  </div>
+  <div class="mark" aria-hidden="true">✿</div>
+</footer>
+
+<script>
+  const header = document.getElementById('header');
+  addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', (window.scrollY || window.pageYOffset || 0) > 40);
+  }, { passive:true });
+
+  const menuBtn = document.querySelector('.menu-btn');
+  const mobileNav = document.getElementById('mobileNav');
+  const setNav = (open) => {
+    mobileNav.classList.toggle('open', open);
+    mobileNav.setAttribute('aria-hidden', open ? 'false' : 'true');
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+
+  if(menuBtn && mobileNav){
+    menuBtn.addEventListener('click', () => setNav(true));
+    mobileNav.querySelectorAll('[data-close]').forEach(el =>
+      el.addEventListener('click', () => setNav(false))
+    );
+    addEventListener('keydown', e => { if(e.key === 'Escape') setNav(false); });
+  }
+
+  const dustLayers = document.querySelectorAll('.sparkle');
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const dustPos = (y,d) =>
+    `0 ${(-y*.5-d).toFixed(1)}px, 40px ${(50-y*.72-d*.65).toFixed(1)}px, 80px ${(24-y*.32-d*1.35).toFixed(1)}px`;
+
+  if(reduceMotion){
+    const onScroll = () => dustLayers.forEach(el => {
+      el.style.backgroundPosition = dustPos(window.scrollY || 0, 0);
+    });
+    addEventListener('scroll', onScroll, { passive:true });
+    onScroll();
+  } else {
+    const loop = ts => {
+      const y = window.scrollY || window.pageYOffset || 0;
+      const drift = Math.sin(ts/2600)*130;
+      dustLayers.forEach(el => { el.style.backgroundPosition = dustPos(y, drift); });
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  }
+</script>
+</body>
+</html>
