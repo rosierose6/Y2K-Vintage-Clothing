@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#0e0e0e">
+
+<title>Y2K Denim Beyond the Jeans: Skirts, Jackets &amp; More | Y2K Vintage Clothing</title>
+<meta name="description" content="Low-rise jeans aren't the only Y2K denim worth hunting for. A guide to denim skirts, jackets, and vests from the era, and how to wear them now.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    color-scheme:light only;
+    --bg:#fdf1f5;
+    --ink:#141414;
+    --muted:#8d7480;
+    --rose:#c9799a;
+    --rose-soft:#f4c3d6;
+    --line:#f0d5e0;
+    --black:#0e0e0e;
+    --serif:'Playfair Display', Georgia, serif;
+    --sans:'Jost', sans-serif;
+    --body:'Nunito Sans', sans-serif;
+    --dust:radial-gradient(circle, #ffd35f 0 .7px, rgba(240,190,70,1) .7px 1.1px, transparent 1.9px),radial-gradient(circle, #ffca47 0 .58px, rgba(226,170,55,1) .58px .9px, transparent 1.6px),radial-gradient(circle, #ffdf85 0 .64px, rgba(245,200,90,1) .64px 1px, transparent 1.7px);
+    --dust-size:152px 152px,116px 116px,196px 196px;
+    --dust-pos:0 0,40px 50px,80px 24px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;background:#fdf1f5}
+  body{
+    background:var(--bg); color:var(--ink); font-family:var(--body); font-weight:300;
+    line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  a:hover{text-decoration:none}
+  .sparkle{
+    position:fixed;inset:0;z-index:0;pointer-events:none;
+    background-image:var(--dust);background-size:var(--dust-size);background-position:var(--dust-pos);
+    filter:drop-shadow(0 0 2.6px rgba(255,190,70,.85)) drop-shadow(0 0 1.2px rgba(255,208,105,.9));
+    animation:twinkle 5s ease-in-out infinite;
+  }
+  @keyframes twinkle{0%,100%{opacity:.38}50%{opacity:.55}}
+  @media (prefers-reduced-motion:reduce){.sparkle{animation:none;opacity:.5}}
+
+  .wrap{max-width:1240px;margin:0 auto;padding:0 40px;position:relative;z-index:1}
+  .eyebrow{
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.42em;
+    font-size:.72rem;color:var(--muted);font-weight:400;
+  }
+  h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:.01em}
+
+  header.site{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:9px 48px;background:#0e0e0e;transition:box-shadow .3s ease;
+  }
+  header.site.scrolled{box-shadow:0 1px 0 rgba(255,255,255,.08)}
+  .logo{font-family:var(--sans);font-weight:500;letter-spacing:.32em;font-size:.92rem;color:#fff}
+  nav.primary{display:flex;align-items:center;gap:42px}
+  nav.primary a{
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.22em;
+    font-size:.74rem;color:#fff;transition:color .2s ease;
+  }
+  nav.primary a:hover,nav.primary a.current{color:var(--rose-soft)}
+  .menu-btn{display:none;background:none;border:none;cursor:pointer}
+
+  .mobile-nav{position:fixed;inset:0;z-index:60;visibility:hidden;pointer-events:none}
+  .mobile-nav .overlay{position:absolute;inset:0;background:rgba(0,0,0,.5);opacity:0;transition:opacity .3s ease}
+  .mobile-nav .panel{
+    position:absolute;top:0;right:0;height:100%;width:min(80vw,320px);background:#0e0e0e;
+    transform:translateX(100%);transition:transform .32s ease;display:flex;flex-direction:column;
+    padding:78px 32px 40px;gap:4px;box-shadow:-14px 0 40px rgba(0,0,0,.4)
+  }
+  .mobile-nav.open{visibility:visible;pointer-events:auto}
+  .mobile-nav.open .overlay{opacity:1}
+  .mobile-nav.open .panel{transform:translateX(0)}
+  .mobile-nav a{
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.2em;font-size:.82rem;
+    color:#fff;padding:18px 2px;border-bottom:1px solid rgba(255,255,255,.08);transition:color .2s ease
+  }
+  .mobile-nav a:hover{color:var(--rose-soft)}
+  .mobile-nav .close{position:absolute;top:20px;right:22px;background:none;border:none;color:#fff;cursor:pointer;padding:6px;line-height:0}
+
+  .article-hero{padding:170px 0 45px;position:relative}
+  .article-head{text-align:center;max-width:850px;margin:0 auto}
+  .article-head h1{font-size:clamp(2.7rem,5vw,4.25rem);line-height:1.1;margin-top:15px}
+  .article-head h1 em{font-style:italic;color:var(--rose)}
+  .rule{width:64px;height:2px;background:var(--rose);margin:26px auto 0}
+  .lede{max-width:620px;margin:30px auto 0;text-align:center;font-size:1.05rem;color:#55434a;line-height:1.75}
+  .meta{
+    margin-top:24px;font-family:var(--sans);font-size:.66rem;text-transform:uppercase;
+    letter-spacing:.2em;color:var(--muted)
+  }
+
+  article{
+    max-width:760px;margin:0 auto;padding:25px 0 100px;position:relative;z-index:1;
+  }
+  article p{font-size:1rem;line-height:1.85;color:#3f3036;margin-bottom:25px}
+  article p strong{font-weight:600;color:var(--ink)}
+  article h2{
+    font-size:2rem;line-height:1.2;margin:62px 0 19px;
+  }
+  article h2 .number{color:var(--rose);font-family:var(--sans);font-size:.68em;letter-spacing:.15em;margin-right:10px}
+  article em{font-family:var(--serif)}
+  .divider{text-align:center;color:var(--rose);font-size:15px;letter-spacing:1.2em;padding-left:1.2em;margin:55px 0;opacity:.7}
+  .formula{
+    margin:42px 0;padding:30px 34px;background:#fff;border-left:3px solid var(--rose);
+    font-family:var(--serif);font-size:1.25rem;line-height:1.55;
+  }
+  .shop-note{
+    margin-top:50px;padding:28px 0 0;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.9rem;line-height:1.75;
+  }
+
+  .closing{text-align:center;padding:20px 0 105px;position:relative;z-index:1}
+  .closing h2{font-size:2.9rem;margin-top:14px;line-height:1.12}
+  .closing h2 em{font-style:italic;color:var(--rose)}
+  .closing .lede{max-width:480px;margin:36px auto 40px;color:#55434a;font-size:1.05rem}
+  .btn{
+    display:inline-block;background:var(--ink);color:#fff;border:1px solid var(--ink);
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;
+    padding:17px 34px;cursor:pointer;transition:opacity .2s ease;
+  }
+  .btn:hover{opacity:.82}
+
+  footer{
+    background:var(--black);color:#fceaf1;text-align:center;
+    padding:26px 20px 30px;position:relative;z-index:2;overflow:hidden;
+  }
+  footer .fine{
+    display:flex;justify-content:center;align-items:center;gap:26px;flex-wrap:wrap;
+    font-family:var(--sans);text-transform:uppercase;letter-spacing:.28em;font-size:.7rem;color:#eec4d5;
+  }
+  footer .fine a{border-bottom:1px solid var(--rose);padding-bottom:2px;transition:color .2s ease}
+  footer .fine a:hover{color:#fff}
+  footer .mark{
+    position:absolute;right:34px;bottom:8px;font-size:1.7rem;color:rgba(255,255,255,.16);
+    font-family:var(--serif);letter-spacing:.1em;
+  }
+
+  @media(max-width:760px){
+    .wrap{padding:0 24px}
+    header.site{padding:20px 24px}
+    nav.primary{display:none}
+    .menu-btn{display:flex}
+    .article-hero{padding:130px 0 30px}
+    .article-head h1{font-size:2.35rem}
+    article{padding:15px 24px 75px}
+    article h2{font-size:1.7rem;margin-top:50px}
+    article p{font-size:.96rem}
+    .formula{padding:25px 24px}
+    .closing h2{font-size:2.1rem}
+    footer .fine{flex-direction:column;gap:12px}
+  }
+</style>
+</head>
+
+<body>
+<div class="sparkle"></div>
+
+<header class="site" id="header">
+  <a href="index.html" class="logo">Y2K VINTAGE CLOTHING</a>
+  <nav class="primary">
+    <a href="index.html#collection">Collection</a>
+    <a href="index.html#about">About</a>
+    <a href="journal.html" class="current">Journal</a>
+    <a href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">Shop on Depop</a>
+  </nav>
+  <button class="menu-btn" aria-label="Open menu">
+    <svg width="26" height="26" viewBox="0 0 24 24" stroke="#ffffff" stroke-width="1.4" fill="none"><path d="M4 8h16M4 16h16"/></svg>
+  </button>
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <div class="overlay" data-close></div>
+  <nav class="panel" aria-label="Mobile navigation">
+    <button class="close" aria-label="Close menu" data-close>
+      <svg width="26" height="26" viewBox="0 0 24 24" stroke="#ffffff" stroke-width="1.4" fill="none"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <a href="index.html#collection" data-close>Collection</a>
+    <a href="index.html#about" data-close>About</a>
+    <a href="journal.html" data-close>Journal</a>
+    <a href="https://www.depop.com/fairytqles" target="_blank" rel="noopener" data-close>Shop on Depop</a>
+  </nav>
+</div>
+
+<main>
+  <section class="article-hero">
+    <div class="wrap">
+      <div class="article-head">
+        <p class="eyebrow">Y2K Styling</p>
+        <h1>Y2K Denim Beyond the Jeans: <em>Skirts, Jackets &amp; More</em></h1>
+        <div class="rule"></div>
+        <p class="lede">
+          Low-rise jeans get all the attention, but they weren't the only denim worth wearing back then.
+          A guide to the rest of the Y2K denim drawer, and how to wear it now.
+        </p>
+        <p class="meta">A Y2K Vintage Clothing Styling Guide · 6 Min Read</p>
+      </div>
+    </div>
+  </section>
+
+  <article>
+    <p>Ask someone to picture Y2K denim and they'll picture the same thing every time: low-rise jeans, probably with a chain belt.</p>
+    <p>Fair enough. They earned that reputation.</p>
+    <p>But the early 2000s denim drawer went a lot further than one silhouette of jeans. Denim mini skirts. Cropped jackets. Vests layered over practically everything. Whole outfits built entirely out of denim, on purpose, without a hint of irony.</p>
+    <p>If you've been hunting for the same pair of jeans everyone else wants, it might be worth looking somewhere else in the rack.</p>
+    <p><strong>The rest of the denim drawer is a lot less crowded.</strong></p>
+
+    <h2><span class="number">01</span> Denim mini and midi skirts</h2>
+    <p>A denim mini was practically a uniform piece in the early 2000s, and it's one of the easiest vintage finds to bring into a modern wardrobe.</p>
+    <p>Look for a fitted, slightly A-line cut rather than anything too stiff or box-shaped. Frayed hems and light whiskering at the thighs are usually signs of genuine wear, not a flaw.</p>
+    <p>Pair it with a simple top and sneakers for daytime, or a fitted tank and boots for evening. The skirt does most of the work.</p>
+
+    <h2><span class="number">02</span> Cropped and oversized denim jackets</h2>
+    <p>Two very different silhouettes were both everywhere at once — a cropped jacket that hit right at the waist, and a deliberately oversized one worn slouchy through the shoulders.</p>
+    <p>Both still work now. The cropped version layers well over a dress or high-waisted bottoms. The oversized version is an easy throw-on over almost anything, and it's usually the more forgiving find if you're not sure about sizing.</p>
+    <p>Check the stitching and hardware when buying secondhand. Original buttons and rivets are a good sign you're looking at something genuinely from the era rather than a newer reproduction.</p>
+
+    <h2><span class="number">03</span> Denim vests</h2>
+    <p>The denim vest is criminally underrated as a vintage find.</p>
+    <p>Layer one over a long-sleeve top, a baby tee, or even a slip dress, and it instantly adds structure without adding bulk. It's also one of the easiest pieces to size up on, since a slightly bigger vest still layers well.</p>
+    <p>Look for one with some hardware detail — patch pockets, a button front, maybe some embroidery. The plainer ones can look a little flat on their own.</p>
+
+    <h2><span class="number">04</span> Denim-on-denim, done deliberately</h2>
+    <p>The double-denim rule used to be "never." In Y2K styling, it was closer to "often, and confidently."</p>
+    <p>The trick to making it work now is contrast in wash and shape. Pair a lighter, more faded jacket with a darker skirt or jeans, or the reverse. Keep the fit of the two pieces different too — a cropped jacket with wider-leg jeans, or a fitted vest with a fuller skirt.</p>
+    <p>Matching washes and matching silhouettes at the same time is what tips it into looking like a costume set rather than an outfit.</p>
+
+    <h2><span class="number">05</span> Embellished and patchwork denim</h2>
+    <p>Rhinestones, embroidery, patches, contrast stitching — a lot of Y2K denim wasn't shy about decoration.</p>
+    <p>These pieces work best as the one statement item in an outfit, the same way you'd treat a bold print. Let an embellished skirt or jacket be the whole point, and keep everything else around it simple.</p>
+    <p>They're also usually the pieces worth paying a little more for secondhand. Decorative denim from the era tends to be harder to find in good condition than a plain pair of jeans.</p>
+
+    <p class="divider">✿ ✧ ✿</p>
+
+    <h2>Finding it secondhand</h2>
+    <p>When you're thrifting for Y2K denim outside of jeans, search broadly. "Denim skirt," "denim vest," and "denim jacket" will turn up more than any Y2K-specific search term will.</p>
+    <p>Check the cut and rise the same way you would with jeans — a genuinely early-2000s piece usually has a shorter rise and a closer fit through the hip than something made more recently. Look closely at the hardware, too. Original buttons, zippers, and stitching tend to look a little different from modern reproductions.</p>
+    <p>And don't skip a piece just because the wash looks dated. A slightly unusual wash is often the easiest way to tell you're holding something real.</p>
+
+    <div class="formula"><strong>The easiest formula:</strong><br>One denim statement piece + one non-denim basic + shoes you already wear.</div>
+
+    <p>Then experiment.</p>
+    <p>Try the vest over a slip dress. The mini skirt with an oversized jacket. Two washes of denim that don't quite match on purpose.</p>
+    <p>The jeans get all the credit, but the rest of the denim drawer is where a lot of the best vintage finds are still hiding.</p>
+    <p><strong>Go look there first.</strong></p>
+
+    <div class="shop-note">
+      Vintage denim pieces land in the collection regularly. Follow along on Depop to see each one-off find when it's listed.
+    </div>
+  </article>
+
+  <section class="closing">
+    <div class="wrap">
+      <p class="eyebrow">Stay Connected</p>
+      <h2>Find Something <em>Worth Keeping</em></h2>
+      <div class="rule"></div>
+      <p class="lede">New pieces land every week. Follow along on Depop to see each find the moment it's listed.</p>
+      <a class="btn" href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">@fairytqles on Depop</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="fine">
+    <span>© 2026 Y2K Vintage Clothing</span>
+    <a href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">depop.com/fairytqles</a>
+  </div>
+  <div class="mark" aria-hidden="true">✿</div>
+</footer>
+
+<script>
+  const header = document.getElementById('header');
+  addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', (window.scrollY || window.pageYOffset || 0) > 40);
+  }, { passive:true });
+
+  const menuBtn = document.querySelector('.menu-btn');
+  const mobileNav = document.getElementById('mobileNav');
+  const setNav = (open) => {
+    mobileNav.classList.toggle('open', open);
+    mobileNav.setAttribute('aria-hidden', open ? 'false' : 'true');
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+
+  if(menuBtn && mobileNav){
+    menuBtn.addEventListener('click', () => setNav(true));
+    mobileNav.querySelectorAll('[data-close]').forEach(el =>
+      el.addEventListener('click', () => setNav(false))
+    );
+    addEventListener('keydown', e => { if(e.key === 'Escape') setNav(false); });
+  }
+
+  const dustLayers = document.querySelectorAll('.sparkle');
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const dustPos = (y,d) =>
+    `0 ${(-y*.5-d).toFixed(1)}px, 40px ${(50-y*.72-d*.65).toFixed(1)}px, 80px ${(24-y*.32-d*1.35).toFixed(1)}px`;
+
+  if(reduceMotion){
+    const onScroll = () => dustLayers.forEach(el => {
+      el.style.backgroundPosition = dustPos(window.scrollY || 0, 0);
+    });
+    addEventListener('scroll', onScroll, { passive:true });
+    onScroll();
+  } else {
+    const loop = ts => {
+      const y = window.scrollY || window.pageYOffset || 0;
+      const drift = Math.sin(ts/2600)*130;
+      dustLayers.forEach(el => { el.style.backgroundPosition = dustPos(y, drift); });
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  }
+</script>
+</body>
+</html>
