@@ -196,6 +196,46 @@
     font-family:var(--serif);letter-spacing:.1em;
   }
 
+  /* ---------- IN-PAGE POST: How I Source Vintage (opens from its card via #how-i-source-vintage) ---------- */
+  .post-view{
+    display:none;position:fixed;inset:0;z-index:70;overflow-y:auto;
+    background:var(--bg);
+  }
+  .post-view:target{display:block}
+  .post-view .bar{
+    position:sticky;top:0;z-index:2;background:#0e0e0e;
+    display:flex;align-items:center;justify-content:space-between;padding:9px 48px;
+  }
+  .post-view .bar a{font-family:var(--sans);text-transform:uppercase;letter-spacing:.22em;font-size:.74rem;color:#fff;transition:color .2s ease}
+  .post-view .bar a:hover{color:var(--rose-soft)}
+  .post-view .bar .logo{letter-spacing:.32em;font-size:.92rem}
+  .post{max-width:720px;margin:0 auto;padding:80px 40px 90px}
+  .post .back{
+    display:inline-block;margin-bottom:34px;font-family:var(--sans);text-transform:uppercase;
+    letter-spacing:.2em;font-size:.66rem;color:var(--muted);transition:color .2s ease;
+  }
+  .post .back:hover{color:var(--rose)}
+  .post .eyebrow{margin-bottom:22px}
+  .post h1{font-size:3rem;line-height:1.1;font-weight:500}
+  .post h1 em{font-style:italic;color:var(--rose)}
+  .post .rule{margin:26px 0 0}
+  .post .lede{margin-top:34px;font-size:1.18rem;line-height:1.7;color:#33262b}
+  .post h2{font-size:1.9rem;line-height:1.2;margin:62px 0 18px;font-family:var(--serif);font-weight:500}
+  .post h2 em{font-style:italic;color:var(--rose)}
+  .post p{font-size:1.04rem;color:#55434a;line-height:1.8;margin-bottom:18px}
+  .post ul,.post ol{margin:6px 0 22px 0;padding-left:1.3em;color:#55434a}
+  .post li{font-size:1.04rem;line-height:1.75;margin-bottom:14px;padding-left:4px}
+  .post li::marker{color:var(--rose)}
+  .post li strong{color:var(--ink);font-weight:600}
+  .post-cta{text-align:center;margin-top:34px}
+  .post-divider{text-align:center;color:var(--rose);font-size:15px;letter-spacing:1.2em;padding-left:1.2em;opacity:.6;margin:64px 0 10px}
+  .related{margin-top:40px;padding-top:30px;border-top:1px solid var(--line);text-align:center}
+  .related .eyebrow{margin-bottom:12px}
+  .related a.rel{font-family:var(--serif);font-size:1.25rem;font-style:italic;border-bottom:1px solid var(--rose);padding-bottom:2px}
+  .related a.rel:hover{color:var(--rose)}
+  .related .more{display:block;margin-top:26px;font-family:var(--sans);text-transform:uppercase;letter-spacing:.2em;font-size:.66rem;color:var(--muted)}
+  .related .more:hover{color:var(--rose)}
+
   /* ---------- RESPONSIVE ---------- */
   @media(max-width:1024px){
     .journal-grid{grid-template-columns:repeat(2,1fr)}
@@ -211,6 +251,11 @@
     .jcard{padding:34px 26px 30px}
     section{padding:50px 0 80px}
     footer .fine{flex-direction:column;gap:12px}
+    .post-view .bar{padding:20px 24px}
+    .post{padding:60px 24px 70px}
+    .post h1{font-size:2.3rem}
+    .post h2{font-size:1.55rem;margin-top:48px}
+    .post .lede{font-size:1.06rem}
   }
 </style>
 </head>
@@ -259,6 +304,13 @@
 <section>
   <div class="wrap">
     <div class="journal-grid">
+
+      <a class="jcard" href="#how-i-source-vintage">
+        <div class="cat">From the Shop</div>
+        <h2>How I Source Vintage: Inside My Thrift Hunt</h2>
+        <p>Where I find Y2K and vintage pieces, what I check before I buy, and how every item gets cleaned, measured and listed honestly.</p>
+        <span class="view">Read the Post</span>
+      </a>
 
       <a class="jcard" href="mint-cable-knit-sweater-outfits.html">
         <div class="cat">Y2K Styling</div>
@@ -432,6 +484,60 @@
   <div class="mark" aria-hidden="true">✿</div>
 </footer>
 
+<!-- POST: How I Source Vintage (opens in front of the journal when its card is clicked) -->
+<div class="post-view" id="how-i-source-vintage">
+  <div class="bar">
+    <a href="#" class="logo">Y2K VINTAGE CLOTHING</a>
+    <a href="#">Close &times;</a>
+  </div>
+  <article class="post">
+    <a class="back" href="#">&larr; Back to the Journal</a>
+    <p class="eyebrow">From the Shop &middot; 2 min read</p>
+    <h1>How I Source Vintage: <em>Inside My Thrift Hunt</em></h1>
+    <div class="rule"></div>
+
+    <p class="lede">Every piece in my shop started as a lucky find on a crowded rack, and the hunt is my favorite part. Here is how I source vintage and Y2K clothing, from where I look to what I check before anything comes home with me.</p>
+    <p>If you have ever wondered why thrifted pieces cost what they do, or how to spot a good one yourself, this one is for you.</p>
+
+    <h2>Where I <em>Look</em></h2>
+    <p>The best finds rarely come from one place, so I rotate through a few favorite spots:</p>
+    <ul>
+      <li><strong>Thrift stores:</strong> I go often and early, because new racks go out all the time. Checking the weird corners, like the kids' section and the men's section, is how I find tiny baby tees and oversized fairycore cardigans.</li>
+      <li><strong>Estate sales:</strong> These are great for true vintage. Pieces have often been kept in a closet for decades, so they are in lovely shape.</li>
+      <li><strong>Flea markets and garage sales:</strong> Fun for chatting with sellers and finding one-of-a-kind accessories.</li>
+      <li><strong>Clothing bins:</strong> Messy, but the prices are low and the treasure-to-junk ratio can be surprisingly good.</li>
+    </ul>
+
+    <h2>What I Check <em>Before I Buy</em></h2>
+    <p>I only bring home pieces I would be proud to wear myself. Before anything reaches the register, I run through a quick checklist:</p>
+    <ol>
+      <li><strong>Fabric and feel:</strong> Natural fibers and sturdy knits tend to last. I look for pilling, thinning, and stretched-out necklines.</li>
+      <li><strong>Flaws:</strong> I check underarms, hems, zippers, and seams in good light. Small flaws are fine if I can describe them honestly.</li>
+      <li><strong>Tags and details:</strong> Old tags, tiny labels, and unusual stitching help me tell real vintage from newer pieces made to look retro.</li>
+      <li><strong>Size and fit:</strong> Vintage sizing runs differently from today's, so I always measure rather than trust the tag.</li>
+    </ol>
+
+    <h2>From Rack <em>to Your Closet</em></h2>
+    <p>Once a piece is home, it gets a gentle wash or careful hand-clean, depending on the fabric, and a good steam. Then I photograph it in natural light and measure it.</p>
+    <p>I describe every item honestly, flaws included, so you know exactly what you are getting. Orders ship in reused or recyclable packaging, because giving clothes a second life should not end with extra waste.</p>
+
+    <h2>Come <em>Hunt With Me</em></h2>
+    <p>That is the whole process: lots of looking, a careful eye, and a love for pieces with a past. New finds land every week on Depop.</p>
+
+    <div class="post-cta">
+      <a class="btn" href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">@fairytqles on Depop</a>
+    </div>
+
+    <p class="post-divider">✿ ✧ ✿</p>
+
+    <div class="related">
+      <p class="eyebrow">Keep Reading</p>
+      <a class="rel" href="thrill-of-the-thrift.html">The Thrill of the Thrift: What Makes a Piece &ldquo;The One&rdquo;</a>
+      <a class="more" href="#">&larr; More from the Journal</a>
+    </div>
+  </article>
+</div>
+
 <script>
   const header = document.getElementById('header');
   addEventListener('scroll', () => {
@@ -450,6 +556,11 @@
     mobileNav.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', () => setNav(false)));
     addEventListener('keydown', (e) => { if (e.key === 'Escape') setNav(false); });
   }
+
+  // Lock page scroll behind the open post, and let Escape close it
+  const syncPost = () => { document.body.style.overflow = (location.hash === '#how-i-source-vintage') ? 'hidden' : ''; };
+  addEventListener('hashchange', syncPost); syncPost();
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && location.hash === '#how-i-source-vintage') location.hash = ''; });
 
   const dustLayers = document.querySelectorAll('.sparkle');
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
