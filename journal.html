@@ -305,6 +305,13 @@
   <div class="wrap">
     <div class="journal-grid">
 
+      <a class="jcard" href="#y2k-trends-fall-2026">
+        <div class="cat">Y2K Styling</div>
+        <h2>Y2K Trends for Fall 2026: 7 Looks to Wear Vintage</h2>
+        <p>Lace camis, bootcut jeans, rhinestone belts and a little indie sleaze: this season's biggest Y2K trends, and how to find them secondhand.</p>
+        <span class="view">Read the Post</span>
+      </a>
+
       <a class="jcard" href="#how-i-source-vintage">
         <div class="cat">From the Shop</div>
         <h2>How I Source Vintage: Inside My Thrift Hunt</h2>
@@ -484,6 +491,67 @@
   <div class="mark" aria-hidden="true">✿</div>
 </footer>
 
+<!-- POST: Y2K Trends for Fall 2026 (opens in front of the journal when its card is clicked) -->
+<div class="post-view" id="y2k-trends-fall-2026">
+  <div class="bar">
+    <a href="#" class="logo">Y2K VINTAGE CLOTHING</a>
+    <a href="#">Close &times;</a>
+  </div>
+  <article class="post">
+      <a class="back" href="#">&larr; Back to the Journal</a>
+      <p class="eyebrow">Y2K Styling &middot; 5 min read</p>
+      <h1>Y2K Trends for Fall 2026: <em>7 Looks to Wear Vintage</em></h1>
+      <div class="rule"></div>
+
+      <p class="lede">Every year someone says the Y2K revival is about to fade, and every year it comes back a little louder. This fall the early-2000s mood is everywhere, from the runways to your feed, and the real thing is still hanging on thrift store racks.</p>
+      <p>Here are the seven trends I'm most excited about this season, plus how to wear each one with original secondhand pieces instead of new copies.</p>
+
+      <h2>Lace Camis, <em>Layered Up</em></h2>
+      <p>The lace-trim cami is back, but for colder months it's all about layering. Let one peek out from under a cardigan, a cropped zip-up or an oversized blazer. Slinky satin and stretchy mesh versions from the early 2000s are easy to find secondhand and often feel softer than anything new.</p>
+
+      <h2>Bootcut <em>Jeans</em></h2>
+      <p>Bootcut denim is fully back. Low-rise is still around, but mid- and high-rise pairs make the shape easier to wear every day. Original 2000s jeans tend to have the fun details: contrast stitching, flap pockets and light, faded washes. Let them graze the floor over platform boots or chunky sneakers.</p>
+
+      <h2>Mini Skirts, <em>All Season Long</em></h2>
+      <p>Micro hems aren't just for summer. Layer a denim or pleated mini over sheer or patterned tights, add knee-high boots and a cozy knit, and you're ready for fall.</p>
+
+      <h2>Indie Sleaze <em>Is Back</em></h2>
+      <p>The messy-glam party look of the late 2000s is having a moment again: faux fur jackets, oversized sunglasses, sequins worn in daylight and a slightly undone attitude. A vintage faux fur coat or a shrunken leather jacket is the easiest way in.</p>
+
+      <h2>Pretty <em>in Pink</em></h2>
+      <p>Soft, princessy pink is one of this fall's big colors. Think baby pink knits, satin slips and velour sets. It's the perfect excuse to bring back the girly side of Y2K, especially mixed with something tougher like dark denim or boots.</p>
+
+      <h2>Sparkly <em>Accessories</em></h2>
+      <p>Accessories are doing a lot of the work this year. The ones to look for secondhand:</p>
+      <ul>
+        <li><strong>Rhinestone belts:</strong> they make a simple jeans-and-a-top outfit feel like an event.</li>
+        <li><strong>Tinted wraparound sunglasses:</strong> curved, colored lenses for an instant early-2000s finish.</li>
+        <li><strong>Oversized hoops:</strong> big, shoulder-grazing and fun again.</li>
+        <li><strong>Hats:</strong> baker-boy caps and fluffy bucket hats change the whole mood of an outfit.</li>
+        <li><strong>Little shoulder bags:</strong> the tucked-under-the-arm kind. Pre-loved ones are often the best versions.</li>
+      </ul>
+      <p>My rule: one sparkly piece per outfit, whether that's a rhinestone belt or a <a href="y2k-rhinestone-baby-tee-outfits.html" style="border-bottom:1px solid var(--rose)">rhinestone baby tee</a>, and keep the rest simple.</p>
+
+      <h2>Grungy <em>Meets Preppy</em></h2>
+      <p>Two moods are running side by side. On one side are baggy jeans, cropped sweatshirts and chunky boots. On the other are cardigans over collared shirts and loafers with a playful twist. Mixing them, like a preppy cardigan with baggy cargo pants, is one of the most fun ways to dress this season.</p>
+
+      <h2>Why Shop Trends <em>Secondhand</em></h2>
+      <p>When a trend comes back, fast fashion rushes to copy it, and the copies all start to look the same. Original pieces from the era usually have better details and more interesting fabrics, and each one is one of a kind. Mixing a trend with thrifted finds, instead of buying a whole look new, is even one of this season's big runway ideas.</p>
+
+      <div class="post-cta">
+        <a class="btn" href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">@fairytqles on Depop</a>
+      </div>
+
+      <p class="post-divider">✿ ✧ ✿</p>
+
+      <div class="related">
+        <p class="eyebrow">Keep Reading</p>
+        <a class="rel" href="styling-vintage-modern-outfits.html">How to Style Vintage Clothing Into Modern Outfits</a>
+        <a class="more" href="#">&larr; More from the Journal</a>
+      </div>
+    </article>
+</div>
+
 <!-- POST: How I Source Vintage (opens in front of the journal when its card is clicked) -->
 <div class="post-view" id="how-i-source-vintage">
   <div class="bar">
@@ -557,10 +625,11 @@
     addEventListener('keydown', (e) => { if (e.key === 'Escape') setNav(false); });
   }
 
-  // Lock page scroll behind the open post, and let Escape close it
-  const syncPost = () => { document.body.style.overflow = (location.hash === '#how-i-source-vintage') ? 'hidden' : ''; };
+  // Lock page scroll behind an open post, and let Escape close it
+  const postIds = Array.from(document.querySelectorAll('.post-view')).map(el => '#' + el.id);
+  const syncPost = () => { document.body.style.overflow = postIds.includes(location.hash) ? 'hidden' : ''; };
   addEventListener('hashchange', syncPost); syncPost();
-  addEventListener('keydown', (e) => { if (e.key === 'Escape' && location.hash === '#how-i-source-vintage') location.hash = ''; });
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && postIds.includes(location.hash)) location.hash = ''; });
 
   const dustLayers = document.querySelectorAll('.sparkle');
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
