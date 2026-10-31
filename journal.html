@@ -236,6 +236,22 @@
   .related .more{display:block;margin-top:26px;font-family:var(--sans);text-transform:uppercase;letter-spacing:.2em;font-size:.66rem;color:var(--muted)}
   .related .more:hover{color:var(--rose)}
 
+  /* ---------- SHOP CARDS INSIDE POSTS (match the homepage collection cards) ---------- */
+  .shop-row{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin:30px 0 10px}
+  .shop-row.two{grid-template-columns:repeat(2,1fr);max-width:470px;margin-left:auto;margin-right:auto}
+  .shop-item{display:block;transition:transform .35s ease}
+  .shop-item:hover{transform:translateY(-6px)}
+  .shop-item .ph{aspect-ratio:3/4;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background-color:#ffffff;background-image:linear-gradient(0deg,#ffffff,#ffffff)}
+  .shop-item .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .shop-item:hover .ph img{transform:scale(1.04)}
+  .shop-item .phlabel{font-family:var(--sans);letter-spacing:.34em;font-size:.6rem;color:#cb9cb1;text-transform:uppercase}
+  .shop-item .meta{padding:16px 2px 0;text-align:center}
+  .shop-item .name{font-family:var(--serif);font-size:1.05rem;font-weight:500;line-height:1.3;color:var(--ink)}
+  .shop-item .details{display:flex;justify-content:center;gap:10px;margin-top:6px;font-family:var(--sans);text-transform:uppercase;letter-spacing:.14em;font-size:.58rem;color:var(--muted)}
+  .shop-item .details .price{color:var(--rose);font-weight:500}
+  .shop-item .view{display:inline-block;margin-top:12px;font-family:var(--sans);text-transform:uppercase;letter-spacing:.2em;font-size:.58rem;color:var(--ink);border-bottom:1px solid var(--rose);padding-bottom:3px}
+  @media(max-width:760px){.shop-row{grid-template-columns:repeat(2,1fr);gap:20px}}
+
   /* ---------- RESPONSIVE ---------- */
   @media(max-width:1024px){
     .journal-grid{grid-template-columns:repeat(2,1fr)}
@@ -304,6 +320,20 @@
 <section>
   <div class="wrap">
     <div class="journal-grid">
+
+      <a class="jcard" href="#y2k-holiday-party-outfits">
+        <div class="cat">Y2K Styling</div>
+        <h2>Y2K Holiday Party Outfits from Thrifted Finds</h2>
+        <p>Slip dresses, sheer layers, a little sparkle and plenty of pink: five secondhand party looks, from family dinners to New Year's Eve.</p>
+        <span class="view">Read the Post</span>
+      </a>
+
+      <a class="jcard" href="#pink-lace-cami-outfits">
+        <div class="cat">Y2K Styling</div>
+        <h2>5 Ways to Style a Vintage Pink Lace Cami This Fall</h2>
+        <p>Under a chunky cardigan, with low-rise denim, layered fairycore-style and more: five easy ways to wear the softest piece of the season.</p>
+        <span class="view">Read the Post</span>
+      </a>
 
       <a class="jcard" href="#y2k-trends-fall-2026">
         <div class="cat">Y2K Styling</div>
@@ -490,6 +520,174 @@
   </div>
   <div class="mark" aria-hidden="true">✿</div>
 </footer>
+
+<!-- POST: Y2K Holiday Party Outfits (opens in front of the journal when its card is clicked) -->
+<div class="post-view" id="y2k-holiday-party-outfits">
+  <div class="bar">
+    <a href="#" class="logo">Y2K VINTAGE CLOTHING</a>
+    <a href="#">Close &times;</a>
+  </div>
+  <article class="post">
+    <a class="back" href="#">&larr; Back to the Journal</a>
+    <p class="eyebrow">Y2K Styling &middot; 4 min read</p>
+    <h1>Y2K Holiday Party Outfits <em>from Thrifted Finds</em></h1>
+    <div class="rule"></div>
+
+    <p class="lede">Party season is almost here, and the early 2000s knew how to do a night out: a little sparkle, a little slip, and absolutely no fear of pink. The best part is that you don't need anything new to pull it off.</p>
+    <p>Here are five holiday party looks built entirely from secondhand pieces, from cozy family dinners to New Year's Eve.</p>
+
+    <h2>1. The Slip-and-Cardigan <em>Dinner Look</em></h2>
+    <p>For family dinners and low-key get-togethers, layer a soft lace cami or slip dress under a fluffy cardigan. Add tights, ballet flats or Mary Janes, and a ribbon in your hair. It's polished enough for photos and comfy enough for a second helping of dessert.</p>
+
+    <h2>2. The Little <em>Striped Dress</em></h2>
+    <p>A fitted mini dress is the easiest party outfit there is. Stripes feel fun and a little indie sleaze, especially with sheer black tights, knee-high boots and a tiny shoulder bag. Throw on a faux fur coat on the way out and you're done.</p>
+
+    <h2>3. Sheer Layers <em>&amp; Sparkle</em></h2>
+    <p>A sheer printed top over a black cami is so Y2K. Pair it with dark jeans or a satin skirt, then add one sparkly piece: a rhinestone belt, glittery clips or a pair of oversized hoops. Deep reds and burgundies feel especially festive this time of year.</p>
+
+    <h2>4. Pink <em>Princess Party</em></h2>
+    <p>Pink is one of the biggest colors of the season, so lean in. A pink babydoll dress or lace top with a sparkly cardigan, shimmery tights and kitten heels is pure early-2000s holiday magic. Keep jewelry delicate so the outfit stays sweet.</p>
+
+    <h2>5. New Year's Eve <em>Glam</em></h2>
+    <p>Save the boldest look for the countdown. Think sequins, satin, metallics and a faux fur jacket. If you find a sparkly top, keep the rest simple with black trousers or a mini skirt. Finish with tinted sunglasses for the photo booth, of course.</p>
+
+    <h2>Tips for <em>Thrifting Party Outfits</em></h2>
+    <ul>
+      <li><strong>Shop early:</strong> sparkly and dressy pieces get snapped up fast once December hits, so start looking in November.</li>
+      <li><strong>Check the formal racks:</strong> thrift stores often hide sequin tops and slip dresses in the evening wear or even costume sections.</li>
+      <li><strong>Look closely at embellishments:</strong> check for loose sequins or missing rhinestones before you buy. A few are easy to fix, a lot is a project.</li>
+      <li><strong>Think beyond one night:</strong> choose pieces you can restyle, like a slip dress you'll wear again with a sweater in January.</li>
+    </ul>
+
+    <h2>Shop <em>Party Pieces</em></h2>
+    <p>A few pieces from the shop that would be perfect for the holidays. Each one is one of a kind, so if it speaks to you, grab it before someone else does.</p>
+    <div class="shop-row">
+      <a class="shop-item" href="https://www.depop.com/products/fairyzqles-indie-sleaze-y2k-black-41d5/" target="_blank" rel="noopener">
+        <div class="ph">
+          <span class="phlabel">Y2K Vintage</span>
+          <img src="https://media-photos.depop.com/r1/18530323/4875181611_de67a5d61bd74fef8afd8753e71930e5/P0.jpg" alt="Black and beige striped mini dress, size small-medium" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="meta">
+          <div class="name">Striped mini dress</div>
+          <div class="details"><span>Size S&ndash;M</span><span class="price">$16.00</span></div>
+          <span class="view">View on Depop</span>
+        </div>
+      </a>
+      <a class="shop-item" href="https://www.depop.com/products/faivytqles-cute-burgundy-paisley-long-sleeve-7c9c/" target="_blank" rel="noopener">
+        <div class="ph">
+          <span class="phlabel">Y2K Vintage</span>
+          <img src="https://media-photos.depop.com/r1/18530323/4892677101_73200a548eaa45ceb9a2a5ac7b314b46/P0.jpg" alt="Burgundy paisley sheer long sleeve top, size large" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="meta">
+          <div class="name">Burgundy paisley sheer top</div>
+          <div class="details"><span>Size L</span><span class="price">$14.00</span></div>
+          <span class="view">View on Depop</span>
+        </div>
+      </a>
+      <a class="shop-item" href="https://www.depop.com/products/fai7ytqles-cute-vintage-pink-lace-flowy-0bc2/" target="_blank" rel="noopener">
+        <div class="ph">
+          <span class="phlabel">Y2K Vintage</span>
+          <img src="https://media-photos.depop.com/r1/18530323/5031935712_3a5931268f2c48d7bf122736cfbe47d0/P0.jpg" alt="Vintage pink lace flowy cami top by H2O, size small" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="meta">
+          <div class="name">Pink lace flowy cami</div>
+          <div class="details"><span>Size S &middot; H2O</span><span class="price">$28.00</span></div>
+          <span class="view">View on Depop</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="post-cta">
+      <a class="btn" href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">@fairytqles on Depop</a>
+    </div>
+
+    <p class="post-divider">✿ ✧ ✿</p>
+
+    <div class="related">
+      <p class="eyebrow">Keep Reading</p>
+      <a class="rel" href="#pink-lace-cami-outfits">5 Ways to Style a Vintage Pink Lace Cami This Fall</a>
+      <a class="more" href="#">&larr; More from the Journal</a>
+    </div>
+  </article>
+</div>
+
+<!-- POST: 5 Ways to Style a Vintage Pink Lace Cami (opens in front of the journal when its card is clicked) -->
+<div class="post-view" id="pink-lace-cami-outfits">
+  <div class="bar">
+    <a href="#" class="logo">Y2K VINTAGE CLOTHING</a>
+    <a href="#">Close &times;</a>
+  </div>
+  <article class="post">
+    <a class="back" href="#">&larr; Back to the Journal</a>
+    <p class="eyebrow">Y2K Styling &middot; 4 min read</p>
+    <h1>5 Ways to Style a Vintage Pink Lace Cami <em>This Fall</em></h1>
+    <div class="rule"></div>
+
+    <p class="lede">A pink lace cami is one of those pieces that looks delicate but works incredibly hard. It can be soft and fairy-like one day and a little bit edgy the next, and it's one of the biggest Y2K pieces of the season.</p>
+    <p>I just listed two of my favorites, so here are five easy ways to wear one, even as the weather cools down.</p>
+
+    <h2>1. Under a <em>Chunky Cardigan</em></h2>
+    <p>This is the easiest way to keep a cami in rotation all fall. Layer it under a cozy, slightly oversized cardigan and leave the top few buttons open so the lace peeks out. Cream, chocolate brown or soft grey knits all look lovely with blush pink.</p>
+
+    <h2>2. With Low-Rise <em>or Bootcut Denim</em></h2>
+    <p>For the classic early-2000s look, pair your cami with light-wash low-rise or bootcut jeans. Add a skinny belt, a little shoulder bag and platform sandals or sneakers, and you have an outfit that feels straight out of 2003 in the best way.</p>
+
+    <h2>3. Fairycore <em>Layers</em></h2>
+    <p>Go full whimsy with a sheer or mesh top layered over your cami, a floaty floral skirt and a ribbon or butterfly clip in your hair. The lace adds texture under the sheer layer and keeps the whole look soft and dreamy.</p>
+
+    <h2>4. Dressed Up <em>with a Blazer</em></h2>
+    <p>For a night out or dinner, wear the cami with a black or pinstripe blazer, straight trousers or a mini skirt and a pair of heels. The contrast between the soft lace and the sharp tailoring is what makes it work.</p>
+
+    <h2>5. A Little <em>Grungy</em></h2>
+    <p>Want to toughen it up? Pair your pink cami with a faux leather jacket, a mini skirt over tights and chunky boots. Pink and black together is a very late-2000s combination, and it's having a big moment again.</p>
+
+    <h2>A Note on <em>Fit &amp; Care</em></h2>
+    <ul>
+      <li><strong>Check the measurements:</strong> vintage sizing runs small, so compare the flat chest measurement to a cami you already own rather than trusting the tag.</li>
+      <li><strong>Mind the straps:</strong> thin straps on older camis can be delicate, so look for any loose stitching before you buy.</li>
+      <li><strong>Wash gently:</strong> hand wash lace in cool water, or use a mesh laundry bag on a delicate cycle, and always lay it flat to dry.</li>
+    </ul>
+
+    <h2>Shop <em>the Camis</em></h2>
+    <p>I just added two pink lace camis to the shop, both size small. Like everything in my shop, each one is one of a kind.</p>
+    <div class="shop-row two">
+      <a class="shop-item" href="https://www.depop.com/products/fai7ytqles-cute-vintage-pink-lace-flowy-0bc2/" target="_blank" rel="noopener">
+        <div class="ph">
+          <span class="phlabel">Y2K Vintage</span>
+          <img src="https://media-photos.depop.com/r1/18530323/5031935712_3a5931268f2c48d7bf122736cfbe47d0/P0.jpg" alt="Vintage pink lace flowy cami top by H2O, size small" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="meta">
+          <div class="name">Pink lace flowy cami</div>
+          <div class="details"><span>Size S &middot; H2O</span><span class="price">$28.00</span></div>
+          <span class="view">View on Depop</span>
+        </div>
+      </a>
+      <a class="shop-item" href="https://www.depop.com/products/fairytqlks-vintage-pink-cami-top-size-5dfd/" target="_blank" rel="noopener">
+        <div class="ph">
+          <span class="phlabel">Y2K Vintage</span>
+          <img src="https://media-photos.depop.com/r1/18530323/5031920488_2fa36e0a68424840af2dfaddf2d28a1f/P0.jpg" alt="Vintage pink lace cami top by Sinjen, size small" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="meta">
+          <div class="name">Vintage pink lace cami</div>
+          <div class="details"><span>Size S &middot; Sinjen</span><span class="price">$25.00</span></div>
+          <span class="view">View on Depop</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="post-cta">
+      <a class="btn" href="https://www.depop.com/fairytqles" target="_blank" rel="noopener">@fairytqles on Depop</a>
+    </div>
+
+    <p class="post-divider">✿ ✧ ✿</p>
+
+    <div class="related">
+      <p class="eyebrow">Keep Reading</p>
+      <a class="rel" href="#y2k-trends-fall-2026">Y2K Trends for Fall 2026: 7 Looks to Wear Vintage</a>
+      <a class="more" href="#">&larr; More from the Journal</a>
+    </div>
+  </article>
+</div>
 
 <!-- POST: Y2K Trends for Fall 2026 (opens in front of the journal when its card is clicked) -->
 <div class="post-view" id="y2k-trends-fall-2026">
